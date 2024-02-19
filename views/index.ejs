@@ -1,0 +1,15 @@
+<% include ('./partials/header') %>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/">Todo App</a>
+</nav>
+
+<div class="container mt-5">
+
+    <form action="/add/todo" class="d-flex">
+        <input type="text" name="todo" class="form-controle" placeholder="Enter todo">
+        <input type="submit" value="Add Todo" class="btn btn-lg btn-primary">
+    </form>
+
+</div>
+
+<% include ('./partials/footer') %>
