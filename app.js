@@ -5,6 +5,9 @@ const PORT = process.env.PORT || 5000;
 const db = require('./database/db.js');
 db();
 
+// routes
+app.use(require('./routes/index.js'));
+
 // Midlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
