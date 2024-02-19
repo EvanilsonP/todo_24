@@ -5,11 +5,11 @@
 
 <div class="container mt-5">
 
-    <form action="/add/todo" class="d-flex">
+    <form action="/add/todo" method="POST" class="d-flex">
         <input type="text" name="todo" class="form-controle" placeholder="Enter todo">
         <input type="submit" value="Add Todo" class="btn btn-lg btn-primary">
     </form>
-
+    
 </div>
 
 <% include ('./partials/footer') %>
